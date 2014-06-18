@@ -1,0 +1,57 @@
+[user]
+	name = Yak
+	email = yakov.rabinovich@gmail.com
+
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+
+[color "status"]
+  added = white
+  changed = green
+  untracked = red
+
+[alias]
+  co = checkout
+  ci = commit
+  rb = rebase
+[pivotal]
+	api-token = c014dfa603ce297ae559e91a441e2596
+	fullname = Yakov Rabinovich
+	token = c014dfa603ce297ae559e91a441e2596
+	projectid = 593689
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[diff]
+	tool = Kaleidoscope
+[difftool]
+	prompt = false
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
+[mergetool]
+	prompt = false
+	keepBackup = true
+[merge]
+	tool = Kaleidoscope
+[core]
+	excludesfile = /opt/boxen/config/git/gitignore
+	editor = /usr/bin/vim
+
+[hub]
+protocol = https
+
+[credential]
+helper = /opt/boxen/bin/boxen-git-credential
