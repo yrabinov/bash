@@ -10,6 +10,7 @@ export PATH='/Applications/Postgres.app/Contents/Versions/9.3/bin:/Users/yrabino
 
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
+export SALT_API_PASS=aQxp47ChvsErTWKqFo
 
 function parse_git_branch () {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'

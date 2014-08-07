@@ -30,6 +30,13 @@ alias b='bundle exec'
 alias such='git'
 alias wow='git status'
 alias many='git'
+alias hero='heroku run console -a'
+alias awsdb='ssh yrabinov@prod-dashboard-935d61b8.fullscreenaws.net'
+alias dblatest='fs status dashboard | grep -a4 commit'
+alias saltserv='ssh yrabinov@prod-salt.fullscreenaws.net'
+
+db="fullscreenv2"
+gorilla="fsgorilla"
 
 # fs databases
 #
